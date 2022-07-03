@@ -23,5 +23,7 @@ CREATE TABLE OrderDetail (
     pID INT NOT NULL,
     odQTY VARCHAR(50),
     FOREIGN KEY (oID) REFERENCES Orders (oID),
-    FOREIGN KEY (pID) REFERENCES Product (pID)_x
+    FOREIGN KEY (pID) REFERENCES Product (pID)
 );
+alter table orderdetail
+add primary key (oID,pID);
