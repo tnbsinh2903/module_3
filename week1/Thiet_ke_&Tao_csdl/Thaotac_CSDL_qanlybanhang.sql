@@ -27,6 +27,6 @@ group by cName  ;
 select orders.oID, oDate, orderdetail.odQTY * product.pPrice  as TotalPrice 
 from orders 
 join orderdetail on orders.oID = orderdetail.oID
-JOIN product on orderdetail.pID = product.pID ;
- ;
+JOIN product on orderdetail.pID = product.pID 
+;
 
