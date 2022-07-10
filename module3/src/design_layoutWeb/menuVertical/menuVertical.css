@@ -1,4 +1,4 @@
-ody{
+body{
     font-family: Arial;
 }
 #menu, #menu ul, #menu li{
@@ -29,8 +29,10 @@ ody{
     position: absolute;
     top:0;
     left:140px;
-    visibility:hidden;
+    display: none;
+
 }
 #menu ul li:hover ul{
+    display: block;
     visibility:visible;
 }
